@@ -5,31 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./assets/style.css">
+    <script wtype="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <title>Weather Updater</title>
 </head>
 
+<!-- Main body -->
 <body>
     <nav class="navbar navbar-light bg-secondary d-flex justify-content-center">
-        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+        <span class="navbar-brand mb-0 h2">Weather Dashboard</span>
     </nav>
-    <div class="container-fluid border" id="main-container">
+    <div class="container-fluid border h-100" id="main-container">
         <div class="row col-12">
-            <div class="input-box col-3 border">
+            <!-- Side search panel -->
+            <div class="input-box col-3 border bg-light">
                 <form class="my-form row form-group">
-                    <label for="city-input">Search for a City</label>
+                    <label for="city-input" class="h4">Search for a City:</label>
                     <input type="text" class="form-control" id="city-input">
-                    <button type="submit" class="btn btn-primary mb-2" id="submit-btn">click</button>
+                    <button type="submit" class="btn btn-primary mb-2" id="submit-btn"><span class="material-icons">search</span></button>
                 </form>
-                <div class="city-buttons row">
+                <!-- Where the buttons are generated -->
+                <div class="city-buttons row list-group">
 
                 </div>
             </div>
+            <!-- Container with weather info -->
+            <div class="col-9">
+                <div class="row weather-container">
+                    <!-- Current day weather goes here -->
+                    <div class="col 12 weather-box border">
 
-            <div class="weather-box col-9 border">
-                Weather goes here
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="five-day-title">5-Day Forecast:</h2>
+                </div>
+                <!-- five day forecast generated here -->
+                <div class="row forecast-box justify-content-around">
+            
+                </div>
             </div>
-    </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

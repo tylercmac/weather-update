@@ -1,0 +1,37 @@
+span.navbar-brand.mb-0.h2 {
+    font-size: xx-large;
+    color: white;
+}
+
+.weather-box {
+    padding: 2rem;
+}
+
+.weather-container {
+    padding: 1rem;
+}
+
+.row.border {
+    padding: 1rem;
+}
+
+.five-day-title {
+    margin-left: 1rem;
+}
+
+.form-control {
+    width: auto;
+    margin-left: auto;
+}
+
+button#submit-btn {
+    margin-right: auto;
+}
+
+.btn {
+    padding: -0.625rem .75rem;
+}
+
+.material-icons {
+    vertical-align: top;
+}
